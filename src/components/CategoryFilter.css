@@ -1,0 +1,38 @@
+.category-filter {
+    display: flex;
+    gap: 0.5rem;
+    overflow-x: auto;
+    padding: 1rem 0;
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* IE 10+ */
+}
+
+.category-filter::-webkit-scrollbar {
+    display: none;
+    /* Chrome/Safari */
+}
+
+.category-pill {
+    padding: 0.5rem 1rem;
+    border-radius: 9999px;
+    background-color: var(--color-bg-card);
+    color: var(--color-text-secondary);
+    border: 1px solid var(--color-border);
+    white-space: nowrap;
+    font-size: 0.9rem;
+    transition: all 0.2s ease;
+}
+
+.category-pill:hover {
+    background-color: var(--color-bg-secondary);
+    color: var(--color-text-primary);
+}
+
+.category-pill.active {
+    background: var(--color-text-primary);
+    color: var(--color-bg-primary);
+    border-color: var(--color-text-primary);
+    font-weight: 500;
+}
